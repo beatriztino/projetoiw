@@ -1,0 +1,28 @@
+html, body{
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 5px;
+  font-family: 'Assistant', sans-serif;
+}
+body{
+  background-color: #E6E6FA;
+}
+.config{
+  width: 800px;
+text-indent:30px;
+margin: 0px auto;
+}
+.titulo{
+  width: 800px;
+  margin: 0px auto;
+text-indent:30px;
+background-image: url("https://luxdecoracoes.com.br/media/product/bc4/papel-de-parede-bobinex-bambino-s-3364-floral-b8e.jpg");
+}
+.dados{
+  float: right;
+}
+.config,.titulo,.dados{
+border: thick  ridge #B0E2FF;
+border-radius: 20px;
+  background-color: #F6E8ED;
+}
