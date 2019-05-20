@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Introdução jQuery</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <script src="js/jquery-3.4.1.js"></script>
+
+    <script>
+    $(document).ready(function(){
+    $("#btnEsconder").click(function(event) {$("p").hide();});
+    $("#btnMostrar").click(function(event) {$("p").show();});
+    $("#btnParagrafo").click(function(event) {$("#0").hide();});
+    $("#btnPessoal").click(function(event) {$("#pessoal").show();$("#contato").hide();$("#acad").hide();});
+    $("#btnContato").click(function(event) {$("#contato").show();$("#pessoal").hide();$("#acad").hide();});
+    $("#btnAcad").click(function(event) {$("#acad").show();$("#pessoal").hide();$("#contato").hide();});});
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2> jQuery</h2>
+      <p id="0">Zottesso, R. H. D.</p>
+      <p id="1"> hjfg</p>
+      <button type="button" class = "btn btn-info" id ="btnEsconder">
+        Esconder
+      </button>
+      <button type="button" class = "btn btn-info" id ="btnMostrar"> Mostrar </button>
+      <button type="button" class = "btn btn-info" id ="btnParagrafo"> Paragrafo</button>
+
+      <hr>
+      <h2> Exemplo com abas</h2>
+      <button type="button" class = "btn btn-info" id ="btnPessoal" > Dados Pessoais</button>
+      <button type="button" class = "btn btn-info" id ="btnContato"> Dados de Contato</button>
+      <button type="button" class = "btn btn-info" id ="btnAcad"> Dados Acadêmicos </button>
+      <div class="pessoal" style="display:none;" id ="pessoal">
+        <p>Nome: Beatriz</p>
+      </div>
+      <div class="contato" style="display:none;" id="contato">
+        <p>E-mail: beatriztinobrito@hotmail.com</p>
+      </div>
+      <div class="acad" style="display:none;" id="acad">
+        <p>Curso: Técnico em Informática</p>
+      </div>
+    </div>
+  </body>
+</html>
